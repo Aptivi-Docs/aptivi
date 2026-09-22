@@ -1,0 +1,149 @@
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+site:
+  title: Aptivi
+  structure:
+    - type: space
+      key: space-1
+      title: Aptivi
+      path: aptivi
+      default: true
+      content:
+        directory: ./aptivi
+    - type: space
+      key: space-11
+      title: Nitrocid KS - Manual
+      path: nitrocid-ks-manual
+      content:
+        directory: ./nitrocid-ks-manual
+    - type: space
+      key: space-17
+      title: Nitrocid KS v0.1.0 - Rolling Manual
+      path: nitrocid-ks-v0.1.0-rolling-manual
+      content:
+        directory: ./nitrocid-ks-v0.1.0-rolling-manual
+    - type: space
+      key: space-22
+      title: Nitrocid KS v0.2.0 - Rolling Manual
+      path: nitrocid-ks-v0.2.0-rolling-manual
+      content:
+        directory: ./nitrocid-ks-v0.2.0-rolling-manual
+    - type: space
+      key: space-12
+      title: Terminaux - Manual
+      path: terminaux-manual
+      content:
+        directory: ./terminaux-manual
+    - type: space
+      key: space-13
+      title: BassBoom - Manual
+      path: bassboom-manual
+      content:
+        directory: ./bassboom-manual
+    - type: space
+      key: space-2
+      title: SpecProbe - Manual
+      path: specprobe-manual
+      content:
+        directory: ./specprobe-manual
+    - type: space
+      key: space-3
+      title: Textify - Manual
+      path: textify-manual
+      content:
+        directory: ./textify-manual
+    - type: space
+      key: space-5
+      title: Nettify - Manual
+      path: nettify-manual
+      content:
+        directory: ./nettify-manual
+    - type: space
+      key: space-4
+      title: Magico - Manual
+      path: magico-manual
+      content:
+        directory: ./magico-manual
+    - type: space
+      key: space-14
+      title: VisualCard - Manual
+      path: visualcard-manual
+      content:
+        directory: ./visualcard-manual
+    - type: space
+      key: space-7
+      title: Metalinker - Manual
+      path: metalinker-manual
+      content:
+        directory: ./metalinker-manual
+    - type: space
+      key: space-6
+      title: ChemiStar - Manual
+      path: chemistar-manual
+      content:
+        directory: ./chemistar-manual
+    - type: space
+      key: space-16
+      title: Aptivestigate - Manual
+      path: aptivestigate-manual
+      content:
+        directory: ./aptivestigate-manual
+    - type: space
+      key: space-19
+      title: ResourceLab - Manual
+      path: resourcelab-manual
+      content:
+        directory: ./resourcelab-manual
+    - type: space
+      key: space-20
+      title: Colorimetry - Manual
+      path: colorimetry-manual
+      content:
+        directory: ./colorimetry-manual
+    - type: space
+      key: space-21
+      title: Calendrier - Manual
+      path: calendrier-manual
+      content:
+        directory: ./calendrier-manual
+    - type: space
+      key: space-24
+      title: Threadify - Manual
+      path: threadify-manual
+      content:
+        directory: ./threadify-manual
+    - type: space
+      key: space-15
+      title: BskyId - Manual
+      path: bskyid-manual
+      content:
+        directory: ./bskyid-manual
+    - type: space
+      key: space-8
+      title: dotify - Manual
+      path: dotify-manual
+      content:
+        directory: ./dotify-manual
+    - type: space
+      key: space-10
+      title: pushrepos - Manual
+      path: pushrepos-manual
+      content:
+        directory: ./pushrepos-manual
+    - type: space
+      key: space-9
+      title: uprepos - Manual
+      path: uprepos-manual
+      content:
+        directory: ./uprepos-manual
+    - type: space
+      key: space-18
+      title: Build and Pack System (Legacy)
+      path: build-and-pack-system
+      content:
+        directory: ./build-and-pack-system
+    - type: space
+      key: space-23
+      title: Aptivi Development Toolkit
+      path: aptivi-development-toolkit
+      content:
+        directory: ./aptivi-development-toolkit
