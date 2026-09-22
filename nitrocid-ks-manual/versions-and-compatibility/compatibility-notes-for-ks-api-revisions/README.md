@@ -1,0 +1,118 @@
+---
+description: This page lists all the migration methods to upgrade your mods
+icon: thumbs-up
+---
+
+# Compatibility Notes for KS API Revisions
+
+Every single API revision comes with their own breaking changes. In order to provide you a satisfying mod development experience, we have to document all the breaking changes that occurred between API revisions and versions inside them.
+
+Looking to upgrade your existing mods from the API that you initially targeted to the latest, which is currently v4.1? We've got you covered! Follow these instructions listed by selecting an initial API target.
+
+***
+
+## <mark style="color:$primary;">Upgrading to the current series</mark>
+
+The current breaking changes for the current revision, which is v4.1, are listed in the page below:
+
+{% content-ref url="upgrading-to-api-v4.1-series.md" %}
+[upgrading-to-api-v4.1-series.md](upgrading-to-api-v4.1-series.md)
+{% endcontent-ref %}
+
+If there is a new API revision, we'll link the last API revision here.
+
+***
+
+## <mark style="color:$primary;">Other upgrades</mark>
+
+All the other upgrade compatibility notes are found here.
+
+<details>
+
+<summary>Versions 0.0.1.x -> 0.0.7.x</summary>
+
+To upgrade to API v1.0 series, consult this page here.
+
+<a href="upgrading-to-api-v1.0-series.md" class="button primary">Upgrading to API v1.0 series</a>
+
+</details>
+
+<details>
+
+<summary>Versions 0.0.8.x -> 0.0.11.x</summary>
+
+To upgrade to API v1.1 series, consult this page here.
+
+<a href="upgrading-to-api-v1.1-series.md" class="button primary">Upgrading to API v1.1 series</a>
+
+</details>
+
+<details>
+
+<summary>Versions 0.0.12.x -> 0.0.15.x</summary>
+
+To upgrade to API v1.2 series, consult this page here.
+
+<a href="upgrading-to-api-v1.2-series.md" class="button primary">Upgrading to API v1.2 series</a>
+
+</details>
+
+<details>
+
+<summary>Versions 0.0.16.x -> 0.0.19.x</summary>
+
+To upgrade to API v1.3 series, consult this page here.
+
+<a href="upgrading-to-api-v1.3-series.md" class="button primary">Upgrading to API v1.3 series</a>
+
+</details>
+
+<details>
+
+<summary>Versions 0.0.20.x -> 0.0.23.x</summary>
+
+To upgrade to API v2.0 series, consult this page here.
+
+<a href="upgrading-to-api-v2.0-series.md" class="button primary">Upgrading to API v2.0 series</a>
+
+</details>
+
+<details>
+
+<summary>Versions from the 0.0.24.x series</summary>
+
+To upgrade to API v2.1 series, consult this page here.
+
+<a href="upgrading-to-api-v2.1-series.md" class="button primary">Upgrading to API v2.1 series</a>
+
+</details>
+
+<details>
+
+<summary>Versions from the 0.1.0.x and 0.1.1.x series</summary>
+
+To upgrade to API v3.0 series, consult this page here.
+
+<a href="upgrading-to-api-v3.0-series/" class="button primary">Upgrading to API v3.0 series</a>
+
+</details>
+
+<details>
+
+<summary>Versions from the 0.1.2.x series</summary>
+
+To upgrade to API v3.1 series, consult this page here.
+
+<a href="upgrading-to-api-v3.1-series.md" class="button primary">Upgrading to API v3.1 series</a>
+
+</details>
+
+<details>
+
+<summary>Versions from the 0.2.0.x series</summary>
+
+To upgrade to API v4.0 series, consult this page here.
+
+<a href="upgrading-to-api-v4.0-series.md" class="button primary">Upgrading to API v4.0 series</a>
+
+</details>
