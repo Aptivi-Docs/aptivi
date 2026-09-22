@@ -294,10 +294,16 @@ The implementation in the second pane is:
 
 You can also configure how your interactive TUI behaves, such as automatic refreshing. For automatic refreshing, your data type will have to be dynamic (i.e. constantly changing) to be able to see live data in the interactive TUI.
 
-In order to configure the automatic refresh, you'll have to override the `RefreshInterval` property and to give it a duration of the pause between refreshes in milliseconds.
+<details>
+
+<summary>Overridable properties</summary>
+
+The following overridable properties are:
+
+<table><thead><tr><th width="220.3333740234375">Property</th><th>Description</th></tr></thead><tbody><tr><td><code>RefreshInterval</code></td><td>A duration in milliseconds to pause before another refresh</td></tr><tr><td><code>HelpPages</code></td><td>List of customized help pages</td></tr><tr><td><code>HelpAdditionalBindings</code></td><td>Additional keybindings to show in the help page</td></tr></tbody></table>
+
+</details>
 
 {% hint style="info" %}
 All configuration must be done when implementing your interactive TUI class. However, you can globally configure the interactive TUI appearance using the `GlobalSettings` property found in the `InteractiveTuiSettings` class.
-
-For help pages, you can override the `HelpPages` property in an instance of `BaseInteractiveTui`.
 {% endhint %}

@@ -37,5 +37,6 @@ The terminal reader state class contains the below most important variables that
 | `OperationWasInvalid`                            | Whether an invalid key was pressed, or an invalid operation was performed, or not.                                                                                                                       |
 | `Concealing`                                     | Whether the input is being concealed right now.                                                                                                                                                          |
 | `RefreshRequired`                                | Whether the operation requires a refresh at the end of the binding execution or not.                                                                                                                     |
+| `Cancelled`                                      | Whether to signal to the application that input has been cancelled or not.                                                                                                                               |
 
 You can access the reader settings from the state, whether it's a general settings that Terminaux makes use of or it's an overridden settings instance, using the `Settings` property.
