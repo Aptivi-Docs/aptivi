@@ -147,10 +147,3 @@ site:
       path: aptivi-development-toolkit
       content:
         directory: ./aptivi-development-toolkit
-    - type: space
-      key: space-25
-      title: Terminaux 8.7 - Manual
-      path: terminaux-8.7-manual
-      draft: true
-      content:
-        directory: ./copy-of-terminaux-manual
