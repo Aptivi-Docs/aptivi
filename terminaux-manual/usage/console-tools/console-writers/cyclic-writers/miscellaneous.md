@@ -176,11 +176,10 @@ This is used to erase edges from a canvas without modifying the canvas instance 
     TextWriterRaw.WriteRaw(eraser2.Render());
     TextWriterRaw.WriteRaw(eraser3.Render());
     TextWriterRaw.WriteRaw(eraser4.Render());
-}
 ```
 {% endcode %}
 
-<figure><img src="../../../../.gitbook/assets/image (161).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (321).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 {% endstep %}
@@ -205,10 +204,10 @@ var misc = new Keybindings()
         new("Binding 3", ConsoleKey.Tab),
     ]
 };
-TextWriterRaw.WriteRaw(RenderableTools.RenderRenderable(misc, new(0, ConsoleWrapper.WindowHeight - 1)));
+TextWriterRaw.WriteRaw(RendererTools.RenderRenderable(misc, new(0, ConsoleWrapper.WindowHeight - 1)));
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (322).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 
@@ -233,10 +232,10 @@ var misc = new Keybindings()
         new("Binding 9", ConsoleKey.Insert),
     ]
 };
-TextWriterRaw.WriteRaw(RenderableTools.RenderRenderable(misc, new(0, ConsoleWrapper.WindowHeight - 1)));
+TextWriterRaw.WriteRaw(RendererTools.RenderRenderable(misc, new(0, ConsoleWrapper.WindowHeight - 1)));
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (323).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 
@@ -262,10 +261,10 @@ var misc = new Keybindings()
     ],
     HelpKeyInfo = new('H', ConsoleKey.H, false, false, false)
 };
-TextWriterRaw.WriteRaw(RenderableTools.RenderRenderable(misc, new(0, ConsoleWrapper.WindowHeight - 1)));
+TextWriterRaw.WriteRaw(RendererTools.RenderRenderable(misc, new(0, ConsoleWrapper.WindowHeight - 1)));
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (324).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 {% endstep %}
@@ -288,7 +287,7 @@ var misc = new KeyShortcut()
 TextWriterRaw.WriteRaw(misc.Render());
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (325).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 {% endstep %}
@@ -308,7 +307,7 @@ var misc = new Emoji(Textify.Data.Unicode.EmojiEnum.SmilingFaceWithSmilingEyes);
 TextWriterWhereColor.WriteWhere(misc.Render(), rng.Next(ConsoleWrapper.WindowWidth), rng.Next(ConsoleWrapper.WindowHeight));
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (326).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -330,7 +329,7 @@ var misc = new Kaomoji(KaomojiCategory.Positive, KaomojiSubcategory.Joy, 3);
 TextWriterWhereColor.WriteWhere(misc.Render(), rng.Next(ConsoleWrapper.WindowWidth), rng.Next(ConsoleWrapper.WindowHeight));
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (327).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 {% endstep %}
@@ -348,7 +347,7 @@ This renderable allows you to render a Nerd Fonts glyph to the console.
 var rng = new Random();
 var misc = new NerdFonts(NerdFontsTypes.Codicons, "nf-md-microsoft_visual_studio_code");
 var pos = new Coordinate(rng.Next(ConsoleWrapper.WindowWidth), rng.Next(ConsoleWrapper.WindowHeight));
-ContainerTools.WriteRenderable(misc, pos);
+Renderer.WriteRenderable(misc, pos);
 ```
 
 <figure><img src="../../../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
@@ -374,7 +373,7 @@ var qrCode = new QrCode()
 TextWriterRaw.WriteRaw(qrCode.Render());
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (328).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 
@@ -392,7 +391,7 @@ var qrCode = new QrCode()
 TextWriterRaw.WriteRaw(qrCode.Render());
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (329).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 
@@ -409,7 +408,7 @@ var qrCode = new MicroQrCode()
 TextWriterRaw.WriteRaw(qrCode.Render());
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (330).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 
@@ -427,7 +426,7 @@ var qrCode = new MicroQrCode()
 TextWriterRaw.WriteRaw(qrCode.Render());
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (331).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 {% endstep %}

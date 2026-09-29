@@ -66,13 +66,9 @@ If your entire screen has been filled and the output isn't done yet, you can use
 
 <summary>Aliasing</summary>
 
-<figure><img src="../../../../.gitbook/assets/113-shell.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (357).png" alt=""><figcaption></figcaption></figure>
 
 Additionally, the MESH shell provides you with facility to make aliasing long commands easier than before. The alias management class, `AliasManager`, allows you to manage the shell aliases, like adding aliases, editing them, removing them, and so on.
-
-The built-in aliases that are currently made for you are:
-
-* `ls` -> `list`
 
 Currently, the below functions are available:
 

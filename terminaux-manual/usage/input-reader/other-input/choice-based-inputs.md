@@ -15,7 +15,7 @@ You can group instances of `InputChoiceInfo` classes using an array of `InputCho
 
 ## <mark style="color:$primary;">Choices</mark>
 
-<figure><img src="../../../.gitbook/assets/image (111).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (358).png" alt=""><figcaption></figcaption></figure>
 
 Input choices are required to make use of all choice-based input methods that use the `InputChoiceInfo` class instances, which you can define them yourself.
 
@@ -98,7 +98,7 @@ You can access information from here:
 
 <summary>Selection style</summary>
 
-<figure><img src="../../../.gitbook/assets/image (112).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (359).png" alt=""><figcaption></figcaption></figure>
 
 Selection style input method uses choices to present you with a full-screen interactive choice selector powered by the [textual UI](../../console-tools/textual-ui/) feature. This style allows you to select a choice interactively. This style is found in the `SelectionStyle` and the `SelectionMultipleStyle` classes for both the single-choice selection style and the multiple-choice selection style, respectively.
 

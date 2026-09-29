@@ -82,7 +82,7 @@ internal class CliInfoPaneTestData : BaseInteractiveTui<string>, IInteractiveTui
 
 This results in the console UI showing up like this:
 
-<figure><img src="../../../.gitbook/assets/image (125).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (347).png" alt=""><figcaption></figcaption></figure>
 
 If you decide to hide the second informational pane so that the selector acts more like an item selector with extra features you implement with your keybindings, you can override the `ShowSecondPane` property so that it would be `false`. Therefore, the TUI would look like this:
 
@@ -200,7 +200,7 @@ internal class CliDoublePaneTestData : BaseInteractiveTui<string, string>, IInte
 
 This results in the double pane interactive TUI showing up like this:
 
-<figure><img src="../../../.gitbook/assets/image (127).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (348).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 `ShowSecondPane` has no effect.

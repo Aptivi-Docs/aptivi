@@ -66,7 +66,7 @@ The screen part hosts a list of dynamic buffers to generate a working text seque
 In order to uniquely identify each screen part without any ambiguity, you can use the `Id` property that is populated each time you make a new screen part.
 {% endhint %}
 
-### Adding simple or dynamic text
+### <mark style="color:$primary;">Adding simple or dynamic text</mark>
 
 You can use the following functions to add simple or dynamic text to the buffer queue:
 
@@ -78,7 +78,7 @@ You can use the following functions to add simple or dynamic text to the buffer 
 If you want to clear the queue list without printing the buffers to the console, you can clear the list of dynamic buffers using the `Clear()` function. You can also control its visibility using the Visible property.
 {% endhint %}
 
-### Ordering screen parts
+### <mark style="color:$primary;">Ordering screen parts</mark>
 
 You can order them using the `Order` property when creating them. However, TermRead renders all the screen parts from the least important (the smallest `Order` values) to the most important (the largest `Order` values). This is useful for layering if you don't feel comfortable adding dynamic texts that represent layers.
 

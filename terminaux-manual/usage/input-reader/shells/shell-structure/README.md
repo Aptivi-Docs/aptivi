@@ -160,47 +160,6 @@ public override Dictionary<string, PromptPresetBase> ShellPresets => new()
 
 <details>
 
-<summary>Accepting network connections</summary>
-
-By default, your shells don't accept network connections. To make them accept network connections, you must override the `AcceptsNetworkConnection` so that it holds the value of `true` instead of `false`.
-
-{% hint style="info" %}
-This feature is currently exclusive to Nitrocid.
-{% endhint %}
-
-This causes the network connection selector, especially `OpenConnectionForShell()` which can be invoked in your networked shell launch code in your command class, to be able to acknowledge your shell.
-
-```csharp
-public override bool AcceptsNetworkConnection => true;
-```
-
-You'll have to adapt your shell to take the first argument, `ShellArgs[0]`, as the network connection instance in your `Shell` instance. For example, we've done this to the FTP shell and shell info instances:
-
-{% code title="FTPShell.cs" lineNumbers="true" %}
-```csharp
-public override void InitializeShell(params object[] ShellArgs)
-{
-    // Parse shell arguments
-    var ftpConnection = (NetworkInstanceConnection<FtpClient>)ShellArgs[0];
-    FtpClient? clientFTP = ftpConnection.ConnectionInstance ??
-        throw new KernelException(KernelExceptionType.FTPShell, LanguageTools.GetLocalized("NKS_SHELLPACKS_COMMON_EXCEPTION_NOCLIENT"));
-
-    // Finalize current connection
-    clientConnection = ftpConnection;
-```
-{% endcode %}
-
-<pre class="language-csharp" data-title="FTPShellInfo.cs" data-line-numbers><code class="lang-csharp">internal class FTPShellInfo : BaseShellInfo&#x3C;FTPShell>, IShellInfo
-{
-    (...)
-<strong>    public override bool AcceptsNetworkConnection => true;
-</strong>}
-</code></pre>
-
-</details>
-
-<details>
-
 <summary>Wrapping input in one line</summary>
 
 By default, all the shells provide you a multi-line prompt, but if you want your input to be in one line wrapped mode, you can override the below property:

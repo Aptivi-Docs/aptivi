@@ -17,7 +17,7 @@ It attempts to split any command with the semicolon between them, like:
 command1 arg1 arg2 ; command2 arg3 arg4
 ```
 
-<figure><img src="../../../../.gitbook/assets/107-shell.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (353).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -30,7 +30,7 @@ Any command that starts with either a space or a hashtag will be ignored as a co
 #comment
 ```
 
-<figure><img src="../../../../.gitbook/assets/108-shell.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (354).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -114,10 +114,10 @@ The `CommandParameters` class contains information about the passed command para
 
 ## <mark style="color:$primary;">Special characters</mark>
 
-<figure><img src="../../../../.gitbook/assets/105-shell.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (355).png" alt=""><figcaption></figcaption></figure>
 
 If a command, such as `wrap`, is set to use the arguments string, you can escape special characters, as long as these characters are known. For example, if you want to pass a switch to a wrapped command, you can use the `wrap` command like this:
 
 ```
-wrap help \-addon
+wrap help \-unified
 ```

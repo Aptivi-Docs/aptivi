@@ -65,7 +65,7 @@ finally
 }
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (78).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (300).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 
@@ -167,7 +167,7 @@ finally
 }
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (81).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (301).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 {% endstep %}
@@ -222,7 +222,7 @@ finally
 }
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (79).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (302).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 
@@ -322,7 +322,7 @@ finally
 }
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (80).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (303).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 {% endstep %}
@@ -377,7 +377,7 @@ finally
 }
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (155).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (304).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 
@@ -477,7 +477,7 @@ finally
 }
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (156).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (305).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 
@@ -532,7 +532,7 @@ finally
 }
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (157).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (306).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 
@@ -644,7 +644,7 @@ finally
 }
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (158).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (307).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 {% endstep %}
@@ -661,20 +661,20 @@ This writer allows you to write a slider that moves according to the minimum pos
 ```csharp
 var stickScreen = new Screen()
 {
-    CycleFrequency = 50,
+	CycleFrequency = 50,
 };
 var container = new Container();
 var slider1 = new Slider(0, 0, 100)
 {
-    Width = 40,
+	Width = 40,
 };
 var slider2 = new Slider(0, 0, 10)
 {
-    Width = 40,
+	Width = 40,
 };
 var slider3 = new Slider(0, 0, 4)
 {
-    Width = 40,
+	Width = 40,
 };
 container.AddRenderable("Slider bar 1", slider1);
 container.SetRenderablePosition("Slider bar 1", new(4, ConsoleWrapper.WindowHeight - 3));
@@ -686,44 +686,49 @@ container.SetRenderablePosition("Slider bar 3", new(4, ConsoleWrapper.WindowHeig
 // Render them all
 try
 {
-    // First, clear the screen
-    ConsoleColoring.LoadBack();
+	// First, clear the screen
+	ConsoleColoring.LoadBack();
 
-    // Then, show the slider bar
-    var stickScreenPart = new ScreenPart();
-    stickScreenPart.Position(4, ConsoleWrapper.WindowHeight - 1);
-    stickScreenPart.AddDynamicText(() => ContainerTools.RenderContainer(container));
-    stickScreen.AddBufferedPart("Test", stickScreenPart);
-    ScreenTools.SetCurrent(stickScreen);
-    ScreenTools.SetCurrentCyclic(stickScreen);
-    ScreenTools.StartCyclicScreen();
+	// Then, show the slider bar
+	var stickScreenPart = new ScreenPart();
+	stickScreenPart.AddDynamicText(() =>
+	{
+		var builder = new StringBuilder();
+		builder.Append(ConsolePositioning.RenderChangePosition(4, ConsoleWrapper.WindowHeight - 1));
+		builder.Append(ContainerTools.RenderContainer(container));
+		return builder.ToString();
+	});
+	stickScreen.AddBufferedPart("Test", stickScreenPart);
+	ScreenTools.SetCurrent(stickScreen);
+	ScreenTools.SetCurrentCyclic(stickScreen);
+	ScreenTools.StartCyclicScreen();
 
-    // Finally, increment the slider bar until it's full
-    for (int sliderPos1 = 0, sliderPos2 = 0, sliderPos3 = 0; sliderPos1 < 100; sliderPos1++, sliderPos2++, sliderPos3++)
-    {
-        if (sliderPos2 == 10)
-            sliderPos2 = 0;
-        if (sliderPos3 == 4)
-            sliderPos3 = 0;
-        slider1.Position = sliderPos1;
-        slider2.Position = sliderPos2;
-        slider3.Position = sliderPos3;
-        Thread.Sleep(100);
-    }
+	// Finally, increment the slider bar until it's full
+	for (int sliderPos1 = 0, sliderPos2 = 0, sliderPos3 = 0; sliderPos1 < 100; sliderPos1++, sliderPos2++, sliderPos3++)
+	{
+		if (sliderPos2 == 10)
+			sliderPos2 = 0;
+		if (sliderPos3 == 4)
+			sliderPos3 = 0;
+		slider1.Position = sliderPos1;
+		slider2.Position = sliderPos2;
+		slider3.Position = sliderPos3;
+		Thread.Sleep(100);
+	}
 }
 catch (Exception ex)
 {
-    InfoBoxModalColor.WriteInfoBoxModal($"Screen failed to render: {ex.Message}");
+	InfoBoxModalColor.WriteInfoBoxModal($"Screen failed to render: {ex.Message}");
 }
 finally
 {
-    ScreenTools.StopCyclicScreen();
-    ScreenTools.UnsetCurrent(stickScreen);
-    ConsoleColoring.LoadBack();
+	ScreenTools.StopCyclicScreen();
+	ScreenTools.UnsetCurrent(stickScreen);
+	ConsoleColoring.LoadBack();
 }
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (159).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (308).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 
@@ -734,23 +739,23 @@ finally
 ```csharp
 var stickScreen = new Screen()
 {
-    CycleFrequency = 50,
+	CycleFrequency = 50,
 };
 var container = new Container();
 var slider4 = new Slider(0, 0, 100)
 {
-    Height = 10,
-    Vertical = true,
+	Height = 10,
+	Vertical = true,
 };
 var slider5 = new Slider(0, 0, 10)
 {
-    Height = 10,
-    Vertical = true,
+	Height = 10,
+	Vertical = true,
 };
 var slider6 = new Slider(0, 0, 4)
 {
-    Height = 10,
-    Vertical = true,
+	Height = 10,
+	Vertical = true,
 };
 container.AddRenderable("Slider bar 4", slider4);
 container.SetRenderablePosition("Slider bar 4", new(4, 2));
@@ -762,44 +767,49 @@ container.SetRenderablePosition("Slider bar 6", new(8, 2));
 // Render them all
 try
 {
-    // First, clear the screen
-    ConsoleColoring.LoadBack();
+	// First, clear the screen
+	ConsoleColoring.LoadBack();
 
-    // Then, show the slider bar
-    var stickScreenPart = new ScreenPart();
-    stickScreenPart.Position(4, ConsoleWrapper.WindowHeight - 1);
-    stickScreenPart.AddDynamicText(() => ContainerTools.RenderContainer(container));
-    stickScreen.AddBufferedPart("Test", stickScreenPart);
-    ScreenTools.SetCurrent(stickScreen);
-    ScreenTools.SetCurrentCyclic(stickScreen);
-    ScreenTools.StartCyclicScreen();
+	// Then, show the slider bar
+	var stickScreenPart = new ScreenPart();
+	stickScreenPart.AddDynamicText(() =>
+	{
+		var builder = new StringBuilder();
+		builder.Append(ConsolePositioning.RenderChangePosition(4, ConsoleWrapper.WindowHeight - 1));
+		builder.Append(ContainerTools.RenderContainer(container));
+		return builder.ToString();
+	});
+	stickScreen.AddBufferedPart("Test", stickScreenPart);
+	ScreenTools.SetCurrent(stickScreen);
+	ScreenTools.SetCurrentCyclic(stickScreen);
+	ScreenTools.StartCyclicScreen();
 
-    // Finally, increment the slider bar until it's full
-    for (int sliderPos1 = 0, sliderPos2 = 0, sliderPos3 = 0; sliderPos1 < 100; sliderPos1++, sliderPos2++, sliderPos3++)
-    {
-        if (sliderPos2 == 10)
-            sliderPos2 = 0;
-        if (sliderPos3 == 4)
-            sliderPos3 = 0;
-        slider4.Position = sliderPos1;
-        slider5.Position = sliderPos2;
-        slider6.Position = sliderPos3;
-        Thread.Sleep(100);
-    }
+	// Finally, increment the slider bar until it's full
+	for (int sliderPos1 = 0, sliderPos2 = 0, sliderPos3 = 0; sliderPos1 < 100; sliderPos1++, sliderPos2++, sliderPos3++)
+	{
+		if (sliderPos2 == 10)
+			sliderPos2 = 0;
+		if (sliderPos3 == 4)
+			sliderPos3 = 0;
+		slider4.Position = sliderPos1;
+		slider5.Position = sliderPos2;
+		slider6.Position = sliderPos3;
+		Thread.Sleep(100);
+	}
 }
 catch (Exception ex)
 {
-    InfoBoxModalColor.WriteInfoBoxModal($"Screen failed to render: {ex.Message}");
+	InfoBoxModalColor.WriteInfoBoxModal($"Screen failed to render: {ex.Message}");
 }
 finally
 {
-    ScreenTools.StopCyclicScreen();
-    ScreenTools.UnsetCurrent(stickScreen);
-    ConsoleColoring.LoadBack();
+	ScreenTools.StopCyclicScreen();
+	ScreenTools.UnsetCurrent(stickScreen);
+	ConsoleColoring.LoadBack();
 }
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (160).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (309).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 {% endstep %}
@@ -826,8 +836,13 @@ try
 
     // Then, show the counter
     var stickScreenPart = new ScreenPart();
-    stickScreenPart.Position(4, ConsoleWrapper.WindowHeight - 2);
-    stickScreenPart.AddDynamicText(marquee.Render);
+	  stickScreenPart.AddDynamicText(() =>
+		{
+			  var builder = new StringBuilder();
+				builder.Append(ConsolePositioning.RenderChangePosition(4, ConsoleWrapper.WindowHeight - 1));
+				builder.Append(marquee.Render());
+				return builder.ToString();
+		});
     stickScreen.AddBufferedPart("Test", stickScreenPart);
     ScreenTools.SetCurrent(stickScreen);
     ScreenTools.SetCurrentCyclic(stickScreen);
@@ -846,7 +861,7 @@ finally
 }
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (82).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (310).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Built-in spinners are available in the `BuiltinSpinners` class.

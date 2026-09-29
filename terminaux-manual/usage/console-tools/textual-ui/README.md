@@ -98,7 +98,7 @@ Here's the companion code to start the interactive TUI for the above class:
 
 Here's the resulting picture of the interactive TUI:
 
-<figure><img src="../../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (345).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="Refreshing" %}
@@ -112,6 +112,6 @@ Here's the companion code that executes the above TUI class:
 
 Here's the resulting picture for the TUI:
 
-<figure><img src="../../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (346).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 {% endtabs %}

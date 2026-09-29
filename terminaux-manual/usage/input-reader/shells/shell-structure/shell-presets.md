@@ -5,7 +5,7 @@ icon: brush
 
 # Shell Presets
 
-<figure><img src="../../../../.gitbook/assets/112-shell.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (356).png" alt=""><figcaption></figcaption></figure>
 
 Presets are the input style for a shell that can be customized to your liking by implementing a shell preset class.
 

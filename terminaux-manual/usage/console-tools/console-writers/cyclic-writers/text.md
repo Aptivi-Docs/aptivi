@@ -50,7 +50,7 @@ TextWriterRaw.WriteRaw(text2.Render());
 TextWriterRaw.WriteRaw(text3.Render());
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (148).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (267).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 
@@ -88,7 +88,7 @@ TextWriterRaw.WriteRaw(text2.Render());
 TextWriterRaw.WriteRaw(text3.Render());
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (268).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 
@@ -126,7 +126,7 @@ TextWriterRaw.WriteRaw(text2.Render());
 TextWriterRaw.WriteRaw(text3.Render());
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (56).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (269).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 {% endstep %}
@@ -167,7 +167,7 @@ TextWriterRaw.WriteRaw(cowsay2.Render());
 TextWriterRaw.WriteRaw(cowsay3.Render());
 ```
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (270).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 
@@ -284,7 +284,7 @@ TextWriterRaw.WriteRaw(text2.Render());
 TextWriterRaw.WriteRaw(text3.Render());
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (149).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (271).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 
@@ -322,7 +322,7 @@ TextWriterRaw.WriteRaw(text2.Render());
 TextWriterRaw.WriteRaw(text3.Render());
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (272).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 
@@ -360,7 +360,7 @@ TextWriterRaw.WriteRaw(text2.Render());
 TextWriterRaw.WriteRaw(text3.Render());
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (58).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (273).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 {% endstep %}
@@ -427,8 +427,6 @@ for (int i = 0; i < animatedText.TextFrames.Length; i++)
 }
 ```
 
-<figure><img src="../../../../.gitbook/assets/animated-text.gif" alt=""><figcaption></figcaption></figure>
-
 </details>
 {% endstep %}
 
@@ -467,7 +465,7 @@ TextWriterRaw.WriteRaw(text.Render());
 TextWriterRaw.WriteRaw(text2.Render());
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (150).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (274).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 
@@ -505,7 +503,7 @@ TextWriterRaw.WriteRaw(text.Render());
 TextWriterRaw.WriteRaw(text2.Render());
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (151).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (275).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 {% endstep %}
@@ -524,7 +522,7 @@ var cowsay = new CowsayText(CowName.Default, "Hello world!");
 TextWriterRaw.WriteRaw(cowsay.Render());
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (276).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 {% endstep %}
@@ -543,7 +541,7 @@ var text = new FigletText(FigletFonts.GetByName("small"), "Figlet text");
 TextWriterRaw.WriteRaw(text.Render());
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (152).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (277).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 {% endstep %}
@@ -560,43 +558,48 @@ This allows you to write an animated text marquee to the console.
 ```csharp
 var stickScreen = new Screen()
 {
-    CycleFrequency = 50,
+	CycleFrequency = 50,
 };
 var marquee = new TextMarquee(
-    "This is the test text marquee that's adjusted to your console width with the margin of 4 from both the " +
-    "left and the right side, and is intentionally long to make the text scroll just like how music players " +
-    "work.")
+	"This is the test text marquee that's adjusted to your console width with the margin of 4 from both the " +
+	"left and the right side, and is intentionally long to make the text scroll just like how music players " +
+	"work.")
 {
-    Width = ConsoleWrapper.WindowWidth - 8,
+	Width = ConsoleWrapper.WindowWidth - 8,
 };
 try
 {
-    // First, clear the screen
-    ConsoleColoring.LoadBack();
+	// First, clear the screen
+	ConsoleColoring.LoadBack();
 
-    // Then, show the counter
-    var stickScreenPart = new ScreenPart();
-    stickScreenPart.Position(4, ConsoleWrapper.WindowHeight / 2);
-    stickScreenPart.AddDynamicText(marquee.Render);
-    stickScreen.AddBufferedPart("Test", stickScreenPart);
-    ScreenTools.SetCurrent(stickScreen);
-    ScreenTools.SetCurrentCyclic(stickScreen);
-    ScreenTools.StartCyclicScreen();
-    Input.ReadKey();
+	// Then, show the counter
+	var stickScreenPart = new ScreenPart();
+	stickScreenPart.AddDynamicText(() =>
+	{
+		var builder = new StringBuilder();
+		builder.Append(ConsolePositioning.RenderChangePosition(4, ConsoleWrapper.WindowHeight / 2));
+		builder.Append(marquee.Render());
+		return builder.ToString();
+	});
+	stickScreen.AddBufferedPart("Test", stickScreenPart);
+	ScreenTools.SetCurrent(stickScreen);
+	ScreenTools.SetCurrentCyclic(stickScreen);
+	ScreenTools.StartCyclicScreen();
+	Input.ReadKey();
 }
 catch (Exception ex)
 {
-    InfoBoxModalColor.WriteInfoBoxModal($"Screen failed to render: {ex.Message}");
+	InfoBoxModalColor.WriteInfoBoxModal($"Screen failed to render: {ex.Message}");
 }
 finally
 {
-    ScreenTools.StopCyclicScreen();
-    ScreenTools.UnsetCurrent(stickScreen);
-    ConsoleColoring.LoadBack();
+	ScreenTools.StopCyclicScreen();
+	ScreenTools.UnsetCurrent(stickScreen);
+	ConsoleColoring.LoadBack();
 }
 ```
 
-<figure><img src="../../../../.gitbook/assets/1000022817.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (278).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 {% endstep %}
@@ -651,7 +654,7 @@ TextWriterRaw.WritePlain("Aligned text without decoration: " + alignedTextUndeco
 TextWriterRaw.WritePlain("Aligned text with decoration:    " + alignedTextDecorated.Render());
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (163).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (279).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 {% endstep %}
@@ -684,7 +687,7 @@ var syntax = new SyntaxText()
 TextWriterRaw.WriteRaw(syntax.Render());
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (218).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (280).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 {% endstep %}

@@ -44,7 +44,7 @@ The following controls are available for the normal Cowsay font selector:
 
 <summary>Figlet</summary>
 
-<figure><img src="../../../.gitbook/assets/image (110).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (362).png" alt=""><figcaption></figcaption></figure>
 
 The figlet font selector allows you to flexibly select a Figlet font provided by the Figlet part of Textify, powered by the [textual UI](../../console-tools/textual-ui/) feature. It shows you a live preview of the font to show you how your selected font looks like prior to submission.
 
