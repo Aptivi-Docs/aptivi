@@ -14,6 +14,28 @@ Terminaux is a library that contains all the common and the extra console tools 
 Below is the release history of the library:
 
 {% updates format="full" %}
+{% update date="2026-10-01" %}
+## <mark style="color:$primary;">v8.8.0</mark>
+
+<mark style="color:green;">Added new search mode for selection infoboxes</mark>
+
+<mark style="color:green;">Added a way for apps to determine whether a reader input was cancelled</mark>
+
+<mark style="color:green;">Added a horizontal value showcase renderer</mark>
+
+<mark style="color:green;">Added a way for custom keybindings to exit interactive TUIs</mark>
+
+<mark style="color:green;">Added back table choice style removed from v5.0</mark>
+
+<mark style="color:yellow;">Improved keybinding handling for the keybindings list</mark>
+
+<mark style="color:yellow;">Fixed search pointing to a wrong item</mark>
+
+<mark style="color:yellow;">Fixed some charts rendering out of bounds</mark>
+
+<mark style="color:yellow;">General improvements and bug fixes</mark>
+{% endupdate %}
+
 {% update date="2026-08-28" %}
 ## <mark style="color:$primary;">v8.7.1</mark>
 

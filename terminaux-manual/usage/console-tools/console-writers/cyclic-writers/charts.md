@@ -73,7 +73,7 @@ var chart = new BreakdownChart()
 TextWriterRaw.WriteRaw(chart.Render());
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (252).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (369).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 
@@ -114,7 +114,7 @@ var chart = new BreakdownChart()
 TextWriterRaw.WriteRaw(chart.Render());
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (253).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (370).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 
@@ -158,7 +158,7 @@ var chart = new BreakdownChart()
 TextWriterRaw.WriteRaw(chart.Render());
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (254).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (371).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 
@@ -201,7 +201,7 @@ var chart = new BreakdownChart()
 TextWriterRaw.WriteRaw(chart.Render());
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (255).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (372).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 {% endstep %}
@@ -249,7 +249,7 @@ var chart = new BarChart()
 TextWriterRaw.WriteRaw(chart.Render());
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (256).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (364).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 

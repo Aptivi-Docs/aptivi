@@ -5,7 +5,7 @@ icon: scroll-old
 
 # Shell Scripting
 
-<figure><img src="../../../../.gitbook/assets/image (196).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (366).png" alt=""><figcaption></figcaption></figure>
 
 The MESH shell contains scripting support. The shell scripts have the `.mesh` extension containing a subset of MESH commands inside it. A simple MESH script containing a command that sets a MESH variable is as follows:
 
@@ -54,7 +54,7 @@ As soon as the parsing is done, the final line gets executed by the `GetLine()` 
 
 ## <mark style="color:$primary;">Variables</mark>
 
-<figure><img src="../../../../.gitbook/assets/111-shell.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (367).png" alt=""><figcaption></figcaption></figure>
 
 MESH provides the variable facility, which holds the variable as a key and the variable value as a value. Each variable starts with the dollar sign like `$var`, regardless of the platform.
 
