@@ -13,28 +13,8 @@ The `Render()` functions are made primarily for plain writing operations. You ca
 
 ***
 
-## <mark style="color:$primary;">Markups</mark>
+## <mark style="color:$primary;">Common features</mark>
 
-Terminaux provides you with a simple BBCode-inspired markup syntax intended to style your own text without resorting to complicated string concatenations. It allows you to seamlessly apply formatting to different parts of text designed to be printed to the console.
+Terminaux provides several common features that are useful for your terminal applications. In order to explore them, click on one of the links, or click on any page in the left pane.
 
-You can use the markup to convert your markup text to a raw text using the following methods:
-
-* Creating a `Mark` instance with your text and calling `ParseMarkup()`.
-* Calling `ParseMarkup()` from `MarkupTools`.
-
-This is all found in the `Terminaux.Writer.CyclicWriters.Renderer.Markup` namespace. This maintains compatibility with [Spectre.Console markup syntax](https://spectreconsole.net/markup) to some degree.
-
-### <mark style="color:$primary;">Supported syntaxes</mark>
-
-You can use the following syntaxes:
-
-* Text formatting that you can use with this syntax: `[format]Hello![/]`
-* Color specifiers that Terminaux can parse, such as `Red`, `#FF0000`, or `255;0;0`.
-
-Some specifiers that are highlighted with green can be provided with arguments with the equals sign after the specifier name, such as `[link=https://google.com]Google[/]`.
-
-### <mark style="color:$primary;">Text formatting</mark>
-
-As for text formatting, here are the supported formatting specifiers:
-
-<table><thead><tr><th width="140">Specifier</th><th>Description</th></tr></thead><tbody><tr><td><code>bold</code></td><td>Makes the surrounding text bold</td></tr><tr><td><code>conceal</code></td><td>Makes the surrounding text hidden</td></tr><tr><td><code>dim</code></td><td>Makes the surrounding text dimmer</td></tr><tr><td><code>invert</code></td><td>Makes the surrounding text's foreground and background color inverted</td></tr><tr><td><code>italic</code></td><td>Makes the surrounding text italic</td></tr><tr><td><code>rapidblink</code></td><td>Makes the surrounding text blink rapidly</td></tr><tr><td><code>slowblink</code></td><td>Makes the surrounding text blink slowly</td></tr><tr><td><code>standout</code></td><td>Makes the surrounding text stand out</td></tr><tr><td><code>strikethrough</code></td><td>Makes the surrounding text crossed out</td></tr><tr><td><code>underline</code></td><td>Makes the surrounding text underlined</td></tr><tr><td><mark style="color:green;"><code>link</code></mark></td><td>Specifies a link (either a link inside (<code>[link]https://google.com[/]</code>) or a link as a argument with a display name (<code>[link=https://google.com]Google[/]</code>))</td></tr></tbody></table>
+<table data-card-size="large" data-view="cards"><thead><tr><th align="center"></th><th align="center"></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td align="center"><h2><a href="individual-writers.md"><mark style="color:$primary;">Individual Writers</mark></a></h2></td><td align="center">The most barebones of console writers, including the raw writers, can be found in this section.</td><td><a href="../../../.gitbook/assets/image (22).png">image (22).png</a></td></tr><tr><td align="center"><h2><a href="cyclic-writers/"><mark style="color:$primary;">Cyclic Writers</mark></a></h2></td><td align="center">Provides you with a large number of standard and graphical cyclic writers to help you make graphical console apps.</td><td><a href="../../../.gitbook/assets/image (22).png">image (22).png</a></td></tr><tr><td align="center"><h2><a href="informational-boxes.md"><mark style="color:$primary;">Informational Boxes</mark></a></h2></td><td align="center">Provides you with a group of informational boxes for different inputs, such as text boxes, combo boxes, and slider boxes.</td><td><a href="../../../.gitbook/assets/image (22).png">image (22).png</a></td></tr><tr><td align="center"><h2><a href="markups.md"><mark style="color:$primary;">Markups</mark></a></h2></td><td align="center">Allows you to use a BBCode-inspired markup langauge to formulate a color-coded and formatted text with just a string.</td><td><a href="../../../.gitbook/assets/image (22).png">image (22).png</a></td></tr></tbody></table>

@@ -28,6 +28,7 @@
       * [Lists and Calendars](usage/console-tools/console-writers/cyclic-writers/lists-and-calendars.md)
       * [Miscellaneous](usage/console-tools/console-writers/cyclic-writers/miscellaneous.md)
     * [Informational Boxes](usage/console-tools/console-writers/informational-boxes.md)
+    * [Markups](usage/console-tools/console-writers/markups.md)
   * [Textual UI](usage/console-tools/textual-ui/README.md)
     * [Interactive TUI](usage/console-tools/textual-ui/interactive-tui.md)
     * [Console Screen](usage/console-tools/textual-ui/console-screen.md)
