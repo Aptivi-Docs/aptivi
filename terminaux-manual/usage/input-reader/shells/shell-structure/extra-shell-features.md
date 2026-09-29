@@ -105,3 +105,25 @@ The source command must have the `Wrappable` flag as piping relies on buffering 
 {% endhint %}
 
 </details>
+
+<details>
+
+<summary>Syntax highlighting</summary>
+
+Shells now support syntax highlighting to distinguish input elements, such as commands from the rest of the syntax. You can learn more about the syntax highlighter feature below.
+
+<a href="../../syntax-highlighting.md" class="button primary" data-icon="flashlight">Syntax Highlighting</a>
+
+Currently, all shells have this feature enabled, with the built-in regex-powered command highlighter being set as the default highlighter. You can, however, configure the highlighter using one of the following methods:
+
+### <mark style="color:$primary;">Global highlighting</mark>
+
+In `ShellManager`, there are two properties that you can modify, which are listed below. It affects all shells except those that explicitly override the highlighting settings when calling `GetLine()`.
+
+<table><thead><tr><th width="240">Property</th><th>Description</th></tr></thead><tbody><tr><td><code>SyntaxHighlightingEnabled</code></td><td>Whether to enable or disable syntax highlighting in the input.</td></tr><tr><td><code>SyntaxHighlighter</code></td><td>A name of the syntax highlighter to use.</td></tr></tbody></table>
+
+### <mark style="color:$primary;">Overriding global settings</mark>
+
+You can override global settings when calling the `GetLine()` function by setting the `enableSyntaxHighlighting` and the `syntaxHighlighter` arguments at the end of the function. This way, global highlighting settings won't be used, and your settings will be used instead.
+
+</details>

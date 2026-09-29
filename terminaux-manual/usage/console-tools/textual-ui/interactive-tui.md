@@ -84,6 +84,10 @@ This results in the console UI showing up like this:
 
 <figure><img src="../../../.gitbook/assets/image (125).png" alt=""><figcaption></figcaption></figure>
 
+If you decide to hide the second informational pane so that the selector acts more like an item selector with extra features you implement with your keybindings, you can override the `ShowSecondPane` property so that it would be `false`. Therefore, the TUI would look like this:
+
+<figure><img src="../../../.gitbook/assets/image (224).png" alt=""><figcaption></figcaption></figure>
+
 {% hint style="info" %}
 You can also use this in an interactive TUI that accepts two data sources by overriding `SecondPaneInteractable` to true.
 
@@ -198,6 +202,10 @@ This results in the double pane interactive TUI showing up like this:
 
 <figure><img src="../../../.gitbook/assets/image (127).png" alt=""><figcaption></figcaption></figure>
 
+{% hint style="info" %}
+`ShowSecondPane` has no effect.
+{% endhint %}
+
 </details>
 
 ***
@@ -263,6 +271,20 @@ To implement keybindings that are only available in one pane in multi-pane inter
 
 * `tui.BindingsFirstPane`: Key bindings that will be only available in the first pane
 * `tui.BindingsSecondPane`: Key bindings that will be only available in the second pane
+
+{% hint style="info" %}
+You can now add some keybindings that allow the interactive TUI to exit using the `CloseInteractiveTui()` function. It usually acts like a confirm selection button, where the application would take the resultant output. For example, Terminaux implements the spinner selector TUI to confirm selection as follows:
+
+{% code expandable="true" %}
+```csharp
+internal void ConfirmSelection()
+{
+    cancelled = false;
+    InteractiveTuiTools.CloseInteractiveTui(this);
+}
+```
+{% endcode %}
+{% endhint %}
 
 ### <mark style="color:$primary;">Example</mark>
 

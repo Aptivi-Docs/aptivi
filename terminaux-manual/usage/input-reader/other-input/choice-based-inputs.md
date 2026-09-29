@@ -55,7 +55,7 @@ All inputs that use the `InputChoiceInfo` instances are mentioned here:
 
 This is the simplest choice style that doesn't use any kind of screen or fancy aesthetics to provide you with the choices. This style is found in the `ChoiceStyle` class, but it only supports single answer. This style presents the choices in the following forms:
 
-<table><thead><tr><th width="119.6666259765625">Type</th><th>Description</th></tr></thead><tbody><tr><td>Single line</td><td>Presents you with a question and a list of choices in a single line.</td></tr><tr><td>Multi line</td><td>Presents you with a question and a list of choices in two lines.</td></tr><tr><td>Modern</td><td>Presents you with a question and a list of choices in a modern way.</td></tr></tbody></table>
+<table><thead><tr><th width="119.6666259765625">Type</th><th>Description</th></tr></thead><tbody><tr><td>Single line</td><td>Presents you with a question and a list of choices in a single line.</td></tr><tr><td>Multi line</td><td>Presents you with a question and a list of choices in two lines.</td></tr><tr><td>Modern</td><td>Presents you with a question and a list of choices in a modern way.</td></tr><tr><td>Table</td><td>Presents you with a question and a table of choices.</td></tr></tbody></table>
 
 ### <mark style="color:$primary;">Answer methods</mark>
 

@@ -181,8 +181,8 @@ You can get all the used colors from either a theme name or a `ThemeInfo` instan
 
 {% code title="ThemeTools.cs" lineNumbers="true" %}
 ```csharp
-public static Dictionary<KernelColorType, Color> GetColorsFromTheme(string theme) { }
-public static Dictionary<KernelColorType, Color> GetColorsFromTheme(ThemeInfo themeInfo) { }
+public static Dictionary<string, Color> GetColorsFromTheme(string theme) { }
+public static Dictionary<string, Color> GetColorsFromTheme(ThemeInfo themeInfo) { }
 ```
 {% endcode %}
 
@@ -190,6 +190,8 @@ Each function does the following:
 
 * The first function gets the theme name and fetches its `ThemeInfo` instance. Then, it calls the second one.
 * The second function gets all the colors from a theme and updates them if there are color types that use the color accent.
+
+Alternatively, if you just want color names that were installed, use the `GetThemeColors()` function.
 
 </details>
 
@@ -332,6 +334,8 @@ You can get and set theme colors individually from the `ThemeInfo` instance usin
 ```csharp
 public Color GetColor(ThemeColorType type) { }
 public Color GetColor(string type) { }
+public Color? TryGetColor(ThemeColorType type) { }
+public Color? TryGetColor(string type) { }
 public void SetColor(ThemeColorType type, Color color) { }
 public void SetColor(string type, Color color) { }
 ```

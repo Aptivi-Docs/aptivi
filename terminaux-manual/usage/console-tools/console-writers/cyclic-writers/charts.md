@@ -698,7 +698,7 @@ TextWriterRaw.WriteRaw(chart.Render());
 {% step %}
 ### <mark style="color:$primary;">Value showcases</mark>
 
-The two renderers are actually components that charts use to render the values. It shows you either a single value or a double value for an element.
+The two renderers are actually components that charts use to render the values. It shows you either a single value or a double value for an element. It can be either horizontal or vertical.
 
 <details>
 
@@ -812,6 +812,93 @@ TextWriterRaw.WriteRaw(showcase.Render());
 {% endcode %}
 
 <figure><img src="../../../../.gitbook/assets/image (220).png" alt=""><figcaption></figcaption></figure>
+
+</details>
+
+<details>
+
+<summary>Horizontal showcase</summary>
+
+{% code expandable="true" %}
+```csharp
+var showcase = new ValueShowcaseHorizontal()
+{
+    Width = ConsoleWrapper.WindowWidth - 4,
+    Height = 2,
+    Elements =
+    [
+        new()
+        {
+            Name = "September 2023",
+            Value = 34.92,
+        },
+        new()
+        {
+            Name = "October 2023",
+            Value = 36.46,
+        },
+        new()
+        {
+            Name = "November 2023",
+            Value = 37.63,
+        },
+        new()
+        {
+            Name = "December 2023",
+            Value = 35.44,
+        },
+        new()
+        {
+            Name = "January 2024",
+            Value = 32.27,
+        },
+        new()
+        {
+            Name = "February 2024",
+            Value = 28.83,
+        },
+        new()
+        {
+            Name = "March 2024",
+            Value = 26.26,
+        },
+        new()
+        {
+            Name = "April 2024",
+            Value = 24.42,
+        },
+        new()
+        {
+            Name = "May 2024",
+            Value = 23.34,
+        },
+        new()
+        {
+            Name = "June 2024",
+            Value = 22.28,
+        },
+        new()
+        {
+            Name = "July 2024",
+            Value = 21.31,
+        },
+        new()
+        {
+            Name = "August 2024",
+            Value = 20.56,
+        },
+        new()
+        {
+            Name = "September 2024",
+            Value = 19.86,
+        },
+    ],
+};
+TextWriterRaw.WriteRaw(showcase.Render());
+```
+{% endcode %}
+
+<figure><img src="../../../../.gitbook/assets/image (223).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 {% endstep %}
