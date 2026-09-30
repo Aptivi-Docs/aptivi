@@ -147,3 +147,10 @@ site:
       path: aptivi-development-toolkit
       content:
         directory: ./aptivi-development-toolkit
+    - type: space
+      key: space-25
+      title: Copy of Terminaux - Manual
+      path: copy-of-terminaux-manual
+      draft: true
+      content:
+        directory: ./copy-of-terminaux-manual
