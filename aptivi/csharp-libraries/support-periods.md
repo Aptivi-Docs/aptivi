@@ -127,9 +127,8 @@ Generally, a macOS version will end its support three years after the initial re
 | Version                | Support status | End of support    |
 | ---------------------- | -------------- | ----------------- |
 | macOS 27 (Golden Gate) | Supported      | To be determined  |
-| macOS 26 (Tahoe)       | Supported      | To be determined  |
+| macOS 26 (Tahoe)       | Supported      | October 1st, 2028 |
 | macOS 15 (Sequoia)     | Supported      | October 1st, 2027 |
-| macOS 14 (Sonoma)      | Supported      | October 1st, 2026 |
 {% endtab %}
 
 {% tab title="Linux" %}
@@ -145,10 +144,9 @@ For our projects, our main support dates can be overridden if the distro version
 {% tab title="FreeBSD" %}
 We update our projects to support the latest version of FreeBSD. When a FreeBSD version series ends its support, we end our support, too.
 
-| Version | Support status | End of support       |
-| ------- | -------------- | -------------------- |
-| v15.0   | Supported      | September 30th, 2026 |
-| v15.1   | Supported      | March 31st, 2027     |
+| Version | Support status | End of support   |
+| ------- | -------------- | ---------------- |
+| v15.1   | Supported      | March 31st, 2027 |
 
 If you are running a FreeBSD version not listed here, there's no guarantee that our projects will work in your FreeBSD system.
 {% endtab %}
