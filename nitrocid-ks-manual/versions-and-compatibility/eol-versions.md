@@ -5,10 +5,10 @@ icon: clock-rotate-left
 
 # EOL Versions
 
-Like all the software in the entire world, Nitrocid KS has support periods for its versions, and versions that are listed below are no longer supported.
+Like all the software in the world, Nitrocid has support periods for its versions, and versions that are listed below are no longer supported.
 
 {% hint style="info" %}
-If you're running one of these versions found, consider upgrading your Nitrocid KS application and updating your mods to the version that supports the latest API.
+If you're running one of these versions found, consider upgrading your Nitrocid application and updating your mods to the version that supports the latest API.
 {% endhint %}
 
 ***
