@@ -117,6 +117,16 @@ If you want to get information about a user without having to open the user sett
 
 </details>
 
+<details>
+
+<summary>User management TUI</summary>
+
+<figure><img src="../../../.gitbook/assets/image (207).png" alt=""><figcaption></figcaption></figure>
+
+You can use `usermantui` to manage users with an interactive TUI.
+
+</details>
+
 {% hint style="warning" %}
 Note that your account must have either the administrative permissions enabled or the user management permission granted to be able to use the manipulation commands.
 {% endhint %}

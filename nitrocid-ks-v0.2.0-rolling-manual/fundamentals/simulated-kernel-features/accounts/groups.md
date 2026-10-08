@@ -63,6 +63,16 @@ You can remove an unwanted user from an existing group using the `rmuserfromgrou
 
 </details>
 
+<details>
+
+<summary>Group management TUI</summary>
+
+<figure><img src="../../../.gitbook/assets/image (208).png" alt=""><figcaption></figcaption></figure>
+
+You can use `groupmantui` to manage groups in an interactive TUI.
+
+</details>
+
 {% hint style="warning" %}
 Note that your account must have either the administrative permissions enabled or the group management permission granted to be able to use the manipulation commands.
 {% endhint %}

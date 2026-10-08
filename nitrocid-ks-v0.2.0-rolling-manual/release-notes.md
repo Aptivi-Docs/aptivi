@@ -226,3 +226,35 @@ The following changes have been made:
 * <mark style="color:yellow;">General improvements and bug fixes</mark>
 
 </details>
+
+<details>
+
+<summary>Version 0.2.0.17</summary>
+
+The following changes have been made:
+
+* <mark style="color:yellow;">General improvements and bug fixes</mark>
+
+</details>
+
+<details>
+
+<summary>Version 0.2.0.18</summary>
+
+The following changes have been made:
+
+* <mark style="color:yellow;">General improvements and bug fixes</mark>
+
+</details>
+
+<details>
+
+<summary>Version 0.2.0.19 (Service Pack 2)</summary>
+
+The following changes have been made:
+
+* <mark style="color:green;">Added user and group management TUIs</mark>
+* <mark style="color:yellow;">Improvements made to The Nitrocid Homepage</mark>
+* <mark style="color:yellow;">General improvements and bug fixes</mark>
+
+</details>
