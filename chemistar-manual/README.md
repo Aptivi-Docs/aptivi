@@ -12,6 +12,12 @@ ChemiStar is a C# library that allows you to query the periodic table in any .NE
 Below is the release history of the library:
 
 {% updates format="full" %}
+{% update date="2026-10-15" %}
+## <mark style="color:$primary;">v1.2.0 - \[10] Neon</mark>
+
+<mark style="color:green;">Added atomic radii information</mark>
+{% endupdate %}
+
 {% update date="2026-01-29" %}
 ## <mark style="color:$primary;">v1.1.3 - \[9] Fluorine</mark>
 
