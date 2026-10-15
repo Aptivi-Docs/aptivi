@@ -8,6 +8,12 @@ icon: speaker
 This series is the third major series that changes the way BassBoom works by restructuring the Basolia library.
 
 {% updates format="full" %}
+{% update date="2026-10-15" %}
+## <mark style="color:$primary;">v1.0.3</mark>
+
+<mark style="color:yellow;">Updated MPG123</mark>
+{% endupdate %}
+
 {% update date="2026-08-28" %}
 ## <mark style="color:$primary;">v1.0.2.3</mark>
 
