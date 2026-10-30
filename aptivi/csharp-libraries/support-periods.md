@@ -156,7 +156,7 @@ We support running our applications on Android devices under the following condi
 
 * The manufacturer must be able to provide security updates to their Android devices for the minimum of 3 years.
 * The manufacturer must be able to provide at least 2 Android version upgrades.
-* Your device must be manufactured after 2021 with an ARM64 processor.
+* Your device must be manufactured after 2023 with an ARM64 processor.
 
 Please note that:
 
@@ -164,7 +164,7 @@ Please note that:
 * We don't officially offer support for non-Samsung devices (Google Pixel, Huawei, Xiaomi, etc.)
 * We don't officially offer support for Android versions that we don't have access to yet
 
-For Samsung users, we are offering support for One UI 6.0 as the minimum version up to One UI 8.x as the maximum version. The following support periods can be found below:
+For Samsung users, we are offering support for One UI 6.0 as the minimum version up to One UI 9.x as the maximum version. The following support periods can be found below:
 
 | Version                 | Support status | End of support      |
 | ----------------------- | -------------- | ------------------- |
