@@ -425,3 +425,58 @@ The above two functions have been removed as they're not meant to be called from
 
 </details>
 
+<details>
+
+<summary>Unnecessary public APIs removed</summary>
+
+{% code title="KernelArguments.cs" %}
+```csharp
+public static class KernelArguments { }
+```
+{% endcode %}
+
+{% code title="Config.cs" %}
+```csharp
+public static void InitializeConfig() { }
+```
+{% endcode %}
+
+{% code title="RemoteDebugger.cs" %}
+```csharp
+public static void StartRDebugger() { }
+```
+{% endcode %}
+
+{% code title="RPCCommands.cs" %}
+```csharp
+public static void ReceiveCommand() { }
+```
+{% endcode %}
+
+The four members above were not expected to appear in the public API, as they're meant to only appear in the internal API that mods don't have access to. So, we've decided to change their access modifier to reflect that to ensure that the kernel stays sane.
+
+{% hint style="danger" %}
+Use the available public API members instead of trying to use the above internal members.
+{% endhint %}
+
+</details>
+
+<details>
+
+<summary>Removed showing RSS feed in shell</summary>
+
+{% code title="KernelMainConfig.Misc.cs" %}
+```csharp
+public bool ShowHeadlineOnLogin { get; set; }
+```
+{% endcode %}
+
+We've removed the feature where the RSS feed gets shown when user enters the shell. This means that you'll no longer be able to see the latest article when the shell starts. However, you can still achieve the same thing using dynamic MAL.
+
+This is done as part of performance improvements that were done to the kernel.
+
+{% hint style="warning" %}
+You'll have to resort to using the dynamic MAL that allows you to show the latest RSS headline when the shell starts.
+{% endhint %}
+
+</details>

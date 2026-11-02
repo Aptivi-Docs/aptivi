@@ -43,17 +43,22 @@ Login handlers are login interfaces in which Nitrocid summons in order to commen
 
 <summary>Login flows</summary>
 
-They provide three login flows:
+They provide the following login flows:
 
-<table><thead><tr><th width="220.6666259765625">Flow</th><th>Description</th></tr></thead><tbody><tr><td><code>LoginScreen()</code></td><td>This is the first step for every login handler to stylize their login screen. It can be simple (textual) or modern (interactive). The return value determines whether to proceed to the user selector screen or to refresh itself (useful for shutdown/reboot options).</td></tr><tr><td><code>UserSelector()</code></td><td>This is the second stage in which the login handler must prompt for the username and return the correct username that exists. Additionally, you can make it return the username that the user input.</td></tr><tr><td><code>PasswordHandler(user)</code></td><td>This is the final stage in which the handler should ask the password for any selected user. For security reasons, we've chosen not to allow auto-logins for passwordless users, except the modern logon handler provided by Nitrocid.</td></tr></tbody></table>
-
-Login handlers don't handle the 2FA authentication for a user that has the second factor enabled, for security reasons. The login manager handles it so that users are always greeted with the 2FA code screen.
+<table><thead><tr><th width="341.333251953125">Flow</th><th>Description</th></tr></thead><tbody><tr><td><code>LoginScreen()</code></td><td>This is the first step for every login handler to stylize their login screen. It can be simple (textual) or modern (interactive). The return value determines whether to proceed to the user selector screen or to refresh itself (useful for shutdown/reboot options).</td></tr><tr><td><code>UserSelector()</code></td><td>This is the second stage in which the login handler must prompt for the username and return the correct username that exists. Additionally, you can make it return the username that the user input.</td></tr><tr><td><code>PasswordHandler(user)</code></td><td>This is the final stage in which the handler should ask the password for any selected user. For security reasons, we've chosen not to allow auto-logins for passwordless users, except the modern logon handler provided by Nitrocid.</td></tr><tr><td><code>TwoFactorAuthHandler(otp, out cancel)</code></td><td>This is an extra stage in which the handler should ask the two-factor authentication code for any selected user that was set up for the 2FA autentication.</td></tr></tbody></table>
 
 {% hint style="danger" %}
-Be honest when dealing with the return values for both `UserSelector` and `PasswordHandler`. Make sure that you use the correct values for both of them. `PasswordHandler` returns either `true` or `false` in the following conditions:
+Be honest when dealing with the return values for both `UserSelector`, `PasswordHandler`, and `TwoFactorAuthHandler`. Make sure that you use the correct values for all of them.
+
+`PasswordHandler` returns either `true` or `false` in the following conditions:
 
 * `true`: if the password is valid
 * `false`: if the password is invalid
+
+`TwoFactorAuthHandler` returns either `true` or `false` in the following conditions:
+
+* `true`: if the authentication code is valid
+* `false`: if the authentication code is invalid
 {% endhint %}
 
 </details>
