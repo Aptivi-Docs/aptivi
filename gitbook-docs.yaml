@@ -28,6 +28,12 @@ site:
       content:
         directory: ./nitrocid-ks-v0.2.0-rolling-manual
     - type: space
+      key: space-25
+      title: Nitrocid KS v0.2.1 - Rolling Manual
+      path: nitrocid-ks-v0.2.1-rolling-manual
+      content:
+        directory: ./nitrocid-ks-v0.2.1-rolling-manual
+    - type: space
       key: space-12
       title: Terminaux - Manual
       path: terminaux-manual
@@ -147,10 +153,3 @@ site:
       path: aptivi-development-toolkit
       content:
         directory: ./aptivi-development-toolkit
-    - type: space
-      key: space-25
-      title: Nitrocid KS v0.2.1 - Rolling Manual
-      path: nitrocid-ks-v0.2.1-rolling-manual
-      draft: true
-      content:
-        directory: ./nitrocid-ks-v0.2.1-rolling-manual
