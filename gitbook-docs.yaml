@@ -153,10 +153,3 @@ site:
       path: aptivi-development-toolkit
       content:
         directory: ./aptivi-development-toolkit
-    - type: space
-      key: space-26
-      title: Copy of BassBoom - Manual
-      path: copy-of-bassboom-manual
-      draft: true
-      content:
-        directory: ./copy-of-bassboom-manual
