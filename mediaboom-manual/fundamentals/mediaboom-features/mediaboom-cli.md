@@ -98,7 +98,7 @@ The MediaBoom CLI application provides other screens for you to use, with the fo
 
 <summary>Video display screen</summary>
 
-<figure><img src="../../.gitbook/assets/equalizer.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 If you're playing a video file, you can make it display a video in the terminal.
 
