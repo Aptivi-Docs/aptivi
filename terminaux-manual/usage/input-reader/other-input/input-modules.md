@@ -65,13 +65,11 @@ For all input modules, `Name` and `Description` properties must be filled when i
 
 Some of the modules might require extra information to be supplied by the caller. Here are some of the built-in modules which require extra properties to be filled:
 
-| Module                | Property  | Description                 |
-| --------------------- | --------- | --------------------------- |
-| `ComboBoxModule`      | `Choices` | Specifies a list of choices |
-| `MultiComboBoxModule` | `Choices` | Specifies a list of choices |
-| `SliderBoxModule`     | `MinPos`  | Specifies a minimum value   |
-|                       | `MaxPos`  | Specifies a maximum value   |
-|                       | `Value`   | Specifies the current value |
+<table><thead><tr><th width="200">Module</th><th width="99.6666259765625">Property</th><th>Description</th></tr></thead><tbody><tr><td><code>ComboBoxModule</code></td><td><code>Choices</code></td><td>Specifies a list of choices</td></tr><tr><td><code>MultiComboBoxModule</code></td><td><code>Choices</code></td><td>Specifies a list of choices</td></tr><tr><td><code>SliderBoxModule</code></td><td><code>MinPos</code></td><td>Specifies a minimum value</td></tr><tr><td></td><td><code>MaxPos</code></td><td>Specifies a maximum value</td></tr><tr><td></td><td><code>Value</code></td><td>Specifies the current value</td></tr></tbody></table>
+
+{% hint style="info" %}
+For combo box and multi combo box modules, we recommend that you use the constructor for easier definition, especially if you have an array of `InputChoiceInfo` or `InputChoiceGroupInfo` instances. Alternatively, you can define the Choices property, but you'll have to construct an array of `InputChoiceCategoryInfo` instances yourself.
+{% endhint %}
 
 ***
 

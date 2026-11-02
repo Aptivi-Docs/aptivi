@@ -14,6 +14,18 @@ Terminaux is a library that contains all the common and the extra console tools 
 Below is the release history of the library:
 
 {% updates format="full" %}
+{% update date="2026-11-05" %}
+## <mark style="color:$primary;">v8.9.0</mark>
+
+<mark style="color:green;">Added new constructors for combo box modules</mark>
+
+<mark style="color:yellow;">Made selection choices tidier</mark>
+
+<mark style="color:yellow;">Improved tab handling mechanism</mark>
+
+<mark style="color:yellow;">General improvements and bug fixes</mark>
+{% endupdate %}
+
 {% update date="2026-10-01" %}
 ## <mark style="color:$primary;">v8.8.0</mark>
 
