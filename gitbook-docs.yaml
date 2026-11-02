@@ -46,6 +46,13 @@ site:
       content:
         directory: ./bassboom-manual
     - type: space
+      key: space-26
+      title: MediaBoom - Manual
+      path: mediaboom-manual
+      draft: true
+      content:
+        directory: ./mediaboom-manual
+    - type: space
       key: space-2
       title: SpecProbe - Manual
       path: specprobe-manual
