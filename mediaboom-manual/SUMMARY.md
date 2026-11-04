@@ -37,6 +37,7 @@
   * [Playlists](power-users/using-basolia/playlists.md)
   * [Albums](power-users/using-basolia/albums.md)
   * [Radio](power-users/using-basolia/radio.md)
+  * [Video](power-users/using-basolia/video.md)
 
 ***
 

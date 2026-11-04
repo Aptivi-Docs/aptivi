@@ -40,7 +40,7 @@ The Basolia library is categorized to the below categories:
 * [**Playlists**](playlists.md): Provides you with functions that allow you to manage playlists.
 * [**Albums**](albums.md): Provides you functions that are able to help you more quickly prepare your studio album for your music collection.
 * [**Radio**](radio.md): Provides you functions that let you play and query Internet radio stations.
-* **Video**: Provides you with an event handler that allows you to render video frames.
+* [**Video**](video.md): Provides you with an event handler that allows you to render video frames.
 
 Each category has its own page, so click on one of the pages in the left side pane.
 

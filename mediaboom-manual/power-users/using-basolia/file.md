@@ -69,6 +69,7 @@ To play streams, excluding radio stations, you should call the `OpenStream()` fu
 
 ```csharp
 public void OpenStream(Stream stream, bool leaveOpen = true) { }
+public async Task OpenStreamAsync(Stream stream, bool leaveOpen = true) { }
 ```
 
 {% hint style="info" %}
