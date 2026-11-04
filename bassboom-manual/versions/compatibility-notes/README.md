@@ -5,9 +5,7 @@ icon: thumbs-up
 
 # Compatibility Notes
 
-Every single API revision comes with their own breaking changes. In order to provide you a satisfying mod development experience, we have to document all the breaking changes that occurred between API revisions and versions inside them.
-
-Looking to upgrade your existing mods from the API that you initially targeted to the latest, which is currently v2.0? We've got you covered! Follow these instructions listed by selecting an initial API target.
+Every single API revision comes with their own breaking changes. In order to provide you a satisfying development experience, we have to document all the breaking changes that occurred between API revisions and versions inside them.
 
 ***
 

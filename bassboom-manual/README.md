@@ -16,7 +16,7 @@ In addition to your regular music files, BassBoom also supports online MPEG radi
 {% hint style="warning" %}
 When using BassBoom, here are the notes to consider:
 
-* This library only supports MPEG audio files and streams. Unfortunately, this means no AAC and AAC+ support and no support for other non-MPEG audio files and streams. Please use MediaBoom if you're going to play non-MPEG streams.
+* This library only supports MPEG audio files and streams. Unfortunately, this means no AAC and AAC+ support and no support for other non-MPEG audio files and streams. Please use [MediaBoom](https://app.gitbook.com/o/fj052nYlsxW9IdL3bsZj/s/fbvztaiukhNkHWZKTLYV/) if you're going to play non-MPEG streams.
 {% endhint %}
 
 To learn more about mpg123, visit this site:

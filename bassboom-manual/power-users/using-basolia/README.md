@@ -45,7 +45,7 @@ Each category has its own page, so click on one of the pages in the left side pa
 
 You can get the MPG123 version and the BassBoom Basolia's version using the following properties located in `InitBasolia`:
 
-<table><thead><tr><th width="159.99993896484375">Property</th><th>Description</th></tr></thead><tbody><tr><td><code>MpgLibVersion</code></td><td>Gives you the MPG123 version shipped with the <code>BassBoom.Native</code> NuGet package.</td></tr><tr><td><code>OutLibVersion</code></td><td>Gives you the OUT123 version shipped with the <code>BassBoom.Native</code> NuGet package.</td></tr><tr><td><code>SynLibVersion</code></td><td>Gives you the SYN123 version shipped with the <code>BassBoom.Native</code> NuGet package.</td></tr><tr><td><code>BasoliaVersion</code></td><td>Gives you the <code>BassBoom.Basolia</code> version.</td></tr></tbody></table>
+<table><thead><tr><th width="159.99993896484375">Property</th><th>Description</th></tr></thead><tbody><tr><td><code>MpgLibVersion</code></td><td>Gives you the MPG123 version shipped with the <code>BassBoom.Native</code> NuGet package.</td></tr><tr><td><code>OutLibVersion</code></td><td>Gives you the OUT123 version shipped with the <code>BassBoom.Native</code> NuGet package.</td></tr><tr><td><code>BasoliaVersion</code></td><td>Gives you the <code>BassBoom.Basolia</code> version.</td></tr></tbody></table>
 
 {% hint style="info" %}
 In case you need to manually initialize the Basolia library, you can use the `InitBasolia.Init()` function.

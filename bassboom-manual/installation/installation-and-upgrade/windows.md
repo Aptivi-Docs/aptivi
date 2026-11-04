@@ -64,7 +64,7 @@ This step-by-step guide shows you how to install BassBoom using the package mana
 If you like to manually unpack the BassBoom packages, follow these steps:
 
 1. Ensure that you have all the required software installed
-2. Download the latest release ZIP file from [this page](https://github.com/Aptivi/Kernel-Simulator/releases).
+2. Download the latest release ZIP file from [this page](https://github.com/Aptivi/BassBoom/releases).
 3. Unpack the ZIP archive to any folder of your choice using [7-Zip](https://7-zip.org/)
 4. Open your favorite terminal emulator, like ConEmu, and change the working directory to a folder containing the BassBoom executable
 5. Execute `bassboom` or `BassBoom.Cli.exe` to start the kernel
