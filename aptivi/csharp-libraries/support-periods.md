@@ -79,7 +79,7 @@ You can consult the supported versions list [here](https://app.gitbook.com/s/yhO
 {% endstep %}
 
 {% step %}
-### <mark style="color:$primary;">BassBoom and MediaBoom</mark>
+### <mark style="color:$primary;">BassBoom</mark>
 
 The following release support terms are divided into two sections:
 
@@ -89,6 +89,19 @@ The following release support terms are divided into two sections:
 The current supported versions are:
 
 * <mark style="color:$primary;">**1.0.x.y series**</mark>: Supported until May 1st, 2031.
+{% endstep %}
+
+{% step %}
+### <mark style="color:$primary;">MediaBoom</mark>
+
+The following release support terms are divided into two sections:
+
+* <mark style="color:$primary;">**Short term releases**</mark>: Versions like 1.1.0, 1.3.0, etc. will get 1 year of support
+* <mark style="color:$primary;">**Long term releases**</mark>: Versions like 1.0.0, 1.2.0, etc. will get 5 years of support
+
+The current supported versions are:
+
+* <mark style="color:$primary;">**1.0.x.y series**</mark>: Supported until November 5th, 2031.
 {% endstep %}
 
 {% step %}
