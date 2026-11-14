@@ -49,7 +49,6 @@ site:
       key: space-26
       title: MediaBoom - Manual
       path: mediaboom-manual
-      draft: true
       content:
         directory: ./mediaboom-manual
     - type: space
@@ -160,3 +159,10 @@ site:
       path: aptivi-development-toolkit
       content:
         directory: ./aptivi-development-toolkit
+    - type: space
+      key: space-27
+      title: Copy of Terminaux - Manual
+      path: copy-of-terminaux-manual
+      draft: true
+      content:
+        directory: ./copy-of-terminaux-manual
