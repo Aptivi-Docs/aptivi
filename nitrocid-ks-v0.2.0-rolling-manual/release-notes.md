@@ -288,3 +288,23 @@ The following changes have been made:
 * <mark style="color:yellow;">General improvements and bug fixes</mark>
 
 </details>
+
+<details>
+
+<summary>Version 0.2.0.23</summary>
+
+The following changes have been made:
+
+* <mark style="color:yellow;">General improvements and bug fixes</mark>
+
+</details>
+
+<details>
+
+<summary>Version 0.2.0.24</summary>
+
+The following changes have been made:
+
+* <mark style="color:yellow;">General improvements and bug fixes</mark>
+
+</details>
