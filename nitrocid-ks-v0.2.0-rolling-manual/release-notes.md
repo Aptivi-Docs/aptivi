@@ -19,8 +19,8 @@ You can check out more detailed changelogs using the `changes` command. Quick ov
 
 This series started with API version v4.0.28.55 for the final version of Nitrocid KS 0.2.0, which was released on February 12th, 2026. The pre-release versions of Nitrocid 0.2.0 were:
 
-* [Tech Preview](https://app.gitbook.com/o/fj052nYlsxW9IdL3bsZj/s/bqO9tg9yMTlpVGZ6xEOk/) - API v4.0.28.18 - August 20th, 2025
-* [Release Candidate](https://app.gitbook.com/o/fj052nYlsxW9IdL3bsZj/s/AQ7s8zxhhCvO5TZuMXKz/) - API v4.0.28.44 - December 25th, 2025
+* Tech Preview - API v4.0.28.18 - August 20th, 2025
+* Release Candidate - API v4.0.28.44 - December 25th, 2025
 
 Here's a list of versions that were released:
 
