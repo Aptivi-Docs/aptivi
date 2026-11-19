@@ -145,7 +145,7 @@ ClassName
 
 Example:
 
-```
+```csharp
 private static void PollForResize()
 {
 (...)
@@ -163,7 +163,7 @@ private static void PollForResize()
 
 Here we come to the argument of tabs vs spaces. Our problem with tabs is that there are systems that treat tabs as four spaces, and there are systems that treat tabs as eight spaces. Moreover, there is no universal way to accurately query the operating system for tab lengths, as such queries are up to the application handling tabs.
 
-We recommend that you set your IDE to use **four spaces** for each tab press. Also, don't use literal tab characters for indentation (`\t`); use four spaces.
+We recommend that you set your IDE to use **four spaces** instead of literal tabs for each tab press.
 
 #### <mark style="color:$primary;">Functions that do only one thing</mark>
 
@@ -176,7 +176,7 @@ access_modifier [static] type SingleLogicFunctionName(string arg1, ...) =>
 
 For example,
 
-```
+```csharp
 public static string[] GetWrappedSentences(string text, int maximumLength) =>
     GetWrappedSentences(text, maximumLength, 0);
 ```
@@ -196,7 +196,7 @@ if/while/for/foreach (...)
 
 For example,
 
-```
+```csharp
 // Also, compensate the \0 characters
 if (text[i] == '\0')
     vtSeqCompensate++;
@@ -238,7 +238,7 @@ Type: Type
 Breaking: Yes/No
 Doc Required: Yes/No
 Backport Required: Yes/No
-AI Assisted: Yes (assisted by Claude, ChatGPT, ...)/No
+AI Assisted: Yes/No
 Part: 1/1
 ```
 
@@ -246,22 +246,7 @@ Part: 1/1
 
 For types, you should select exactly one type from the following types:
 
-* `add`: for additions
-* `fix`: for fixes
-* `rem`: for removals
-* `imp`: for improvements
-* `ref`: for refactors
-* `upd`: for library updates
-* `doc`: for documentation updates
-* `dev`: for development start points
-* `dcp`: for development checkpoints (version bump, etc.)
-* `fin`: for development finish points
-* `chg`: for minor changes to previous commits
-* `int`: for continuous integration changes
-* `bkp`: for backports (an empty commit for cherry-picked commits or a full commit for non-cherry-picked backports)
-* `prj`: for project initialization
-* `pkg`: for packaging-related changes, such as Debian, PKGBUILD, Flatpak, etc.
-* `und`: for other changes that don't apply
+<table><thead><tr><th width="70">Type</th><th>Description</th></tr></thead><tbody><tr><td><code>add</code></td><td>Additions</td></tr><tr><td><code>fix</code></td><td>Bug fixes</td></tr><tr><td><code>rem</code></td><td>Removals</td></tr><tr><td><code>imp</code></td><td>Improvements</td></tr><tr><td><code>ref</code></td><td>Code refactors</td></tr><tr><td><code>upd</code></td><td>Library updates</td></tr><tr><td><code>doc</code></td><td>Documentation updates</td></tr><tr><td><code>dev</code></td><td>Development start points</td></tr><tr><td><code>dcp</code></td><td>Development checkpoints (version bump, etc.)</td></tr><tr><td><code>fin</code></td><td>Development finish points</td></tr><tr><td><code>chg</code></td><td>Minor changes to previous commits</td></tr><tr><td><code>int</code></td><td>Continuous integration changes</td></tr><tr><td><code>bkp</code></td><td>Backports (an empty commit for cherry-picked commits or a full commit for non-cherry-picked backports)</td></tr><tr><td><code>prj</code></td><td>Project initialization</td></tr><tr><td><code>pkg</code></td><td>Packaging-related changes, such as Debian, PKGBUILD, etc.</td></tr><tr><td><code>und</code></td><td>Other changes that don't apply</td></tr></tbody></table>
 
 {% hint style="info" %}
 If you want to use `add`, `fix`, `rem`, `imp`, `doc`, or `bkp`, you'll have to provide a description.
@@ -278,27 +263,14 @@ Additionally, attributes are optional and can be specified. Multiple attributes 
 
 These are the attributes we officially support:
 
-* `brk`: for breaking changes
-* `sec`: for security
-* `prf`: for performance improvements
-* `reg`: for regression fixes
-* `doc`: for documentation requirement
-* `ptp`: for prototyping
-* `prt`: for commit series (PartNum is required)
-* `bkp`: for backports
+<table><thead><tr><th width="90">Attribute</th><th>Description</th></tr></thead><tbody><tr><td><code>brk</code></td><td>Breaking changes (usually paired with <code>doc</code>)</td></tr><tr><td><code>sec</code></td><td>Security improvements</td></tr><tr><td><code>prf</code></td><td>Performance improvements</td></tr><tr><td><code>reg</code></td><td>Regression fixes</td></tr><tr><td><code>doc</code></td><td>Documentation requirement</td></tr><tr><td><code>ptp</code></td><td>Prototyping</td></tr><tr><td><code>prt</code></td><td>Commit series (part number is required)</td></tr><tr><td><code>bkp</code></td><td>Backportable for older supported version series</td></tr></tbody></table>
 
 #### <mark style="color:$primary;">Backported commits</mark>
 
 Take note that if you've set a commit that is a backport, make sure that the type is not one of the following types:
 
-* Incompatible types with `bkp`
-  * `rem`: for removals
-  * `dev`: for development start points
-  * `dcp`: for development checkpoints (version bump, etc.)
-  * `fin`: for development finish points
-* Incompatible attributes with `bkp`
-  * `ptp`: for prototyping
-  * `brk`: for breaking changes
+* Incompatible types with `bkp`: `rem`, `dev`, `dcp`, and `fin`
+* Incompatible attributes with `bkp`: `ptp` and `brk`
 
 In addition to that, if you've backported a commit from a different branch or tag, you must specify this stanza directly after the description section, just like this:
 
@@ -352,56 +324,21 @@ Two new lines are applied intentionally so that the hash list gets rendered in a
 [servicing] PROJECT v1.0.0: Release Name
 ```
 
-The type at the beginning is necessary as it can tell us and the users in what stage this release belongs to. Currently, this list of releases should be used:
+The type at the beginning is necessary as it can tell us and the users in what stage this release belongs to.
 
-* `alpha`: Indicates that this release is an alpha version
-* `beta`: Indicates that this release is a beta version
-* `release`: Indicates that this release is a major release (i.e. changes the major part and/or the minor part)
-* `servicing`: Indicates that this release is a minor release (i.e. changes the build part and/or the patch part)
+Currently, this list of releases should be used:
+
+<table><thead><tr><th width="110">Specifier</th><th></th></tr></thead><tbody><tr><td><code>alpha</code></td><td>This release is an alpha version</td></tr><tr><td><code>beta</code></td><td>This release is a beta version</td></tr><tr><td><code>release</code></td><td>This release is a major release (i.e. changes the major part and/or the minor part)</td></tr><tr><td><code>servicing</code></td><td>This release is a minor release (i.e. changes the build part and/or the patch part)</td></tr></tbody></table>
 
 ### <mark style="color:$primary;">Assistance of AI</mark>
 
-Artifical intelligence (AI) is a next-gen technology that every company is leaning to, which we are proud of, but when contributing code or other things to this project, we rely on either human work or AI work + human reviews to ensure maximum quality. You are allowed to use AI assistants, but you'll have to perform extra actions to make sure that you become transparent about its usage.
+Artificial intelligence (AI) is a next-gen technology that every company is leaning to, which we are proud of, but when contributing code or other things to this project, we rely on either human work or AI work + human reviews to ensure maximum quality. You are allowed to use AI assistants as long as they're used responsibly.
 
-When authoring commits that contain AI generated code, you'll have to answer `Yes` to the `AI Assisted` field, then you'll have to specify the assistant(s) who helped you author the commit in both the source code and in the field, such as `AI Assisted: Yes (assisted by Claude Sonnet 4.5)` for Claude and a code comment that looks like this (not limited to C#):
-
-```csharp
-//
-// ========== CODE ASSISTED BY Claude Sonnet 4.5, ChatGPT Codex, ... WITH HUMAN REVIEW
-//
-
-(...)
-
-//
-// ========== CODE ASSISTED BY Claude Sonnet 4.5, ChatGPT Codex, ... WITH HUMAN REVIEW
-//
-```
-
-For example, if you used Claude Sonnet 4.5 to help you write C# code that converts an array of single-digit integers to an integer, the code snippet will be like this:
-
-<pre class="language-csharp"><code class="lang-csharp">public static bool VerifyPositiveOrZeroNumberArray(int[] digits)
-{
-    int result = 0;
-    
-<strong>    //
-</strong><strong>    // ========== CODE ASSISTED BY Claude Sonnet 4.5 WITH HUMAN REVIEW
-</strong><strong>    //
-</strong><strong>    foreach (int digit in digits)
-</strong><strong>    {
-</strong><strong>        result = result * 10 + digit;
-</strong><strong>    }
-</strong><strong>    //
-</strong><strong>    // ========== CODE ASSISTED BY Claude Sonnet 4.5 WITH HUMAN REVIEW
-</strong><strong>    //
-</strong>    
-    // Return the result
-    return result >= 0;
-}
-</code></pre>
+When authoring commits that contain AI generated code, the only thing you'll have to do is to answer `Yes` to the `AI Assisted` field. That way, we can tell which commits were made with the assistance of AI, and is only for informational purposes.
 
 ### <mark style="color:$primary;">Engagement with the Community</mark>
 
-Thank you for your contribution to our project, but in order for this contribution to be flawless, you must be respectful to all other developers of the projects and the users in general, regardless of whether there is a fight or a heated discussion going on. Try to keep it civil during fights and don't use personal attacks, threats of any kind, derogatory and racist remarks against people or groups of any race, ethnicity, religion, or group, and explicit words (like swearing) to try to solve any disagreement with anyone, including the developers of the project.
+Thank you for your contribution to our project, but in order for this contribution to be flawless, you must be respectful to all other developers of the projects and the users in general, regardless of whether there is a fight or a heated discussion going on. Try to keep it civil and don't use personal attacks, threats of any kind, derogatory and racist remarks against people or groups of any race, ethnicity, religion, or group, and profanity to try to solve any disagreement with anyone, including the developers of the project.
 
 </details>
 
