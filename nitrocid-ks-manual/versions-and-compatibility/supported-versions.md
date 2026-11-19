@@ -26,6 +26,9 @@ This revision of the fourth generation API is currently under development.
 | Version  | Release date | EOL date | Security EOL date |
 | -------- | ------------ | -------- | ----------------- |
 | v0.2.1.0 | 11/5/2026    | 8/5/2027 | 8/5/2027          |
+| v0.2.1.1 | 11/6/2026    |          |                   |
+| v0.2.1.2 | 11/15/2026   |          |                   |
+| v0.2.1.3 | 11/16/2026   |          |                   |
 {% endtab %}
 
 {% tab title="API v4.0" %}
@@ -58,6 +61,8 @@ This revision of the fourth generation API is currently under development.
 | v0.2.0.20 | 10/10/2026   |           |                   |
 | v0.2.0.21 | 11/3/2026    |           |                   |
 | v0.2.0.22 | 11/5/2026    |           |                   |
+| v0.2.0.23 | 11/15/2026   |           |                   |
+| v0.2.0.24 | 11/16/2026   |           |                   |
 {% endtab %}
 
 {% tab title="API v3.0" %}
@@ -155,5 +160,7 @@ This revision of the third generation API is supported until 3/11/2034.
 | v0.1.0.88 | 10/10/2026   |           |                   |
 | v0.1.0.89 | 11/3/2026    |           |                   |
 | v0.1.0.91 | 11/5/2026    |           |                   |
+| v0.1.0.92 | 11/15/2026   |           |                   |
+| v0.1.0.93 | 11/16/2026   |           |                   |
 {% endtab %}
 {% endtabs %}
