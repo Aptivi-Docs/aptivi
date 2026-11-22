@@ -308,3 +308,14 @@ The following changes have been made:
 * <mark style="color:yellow;">General improvements and bug fixes</mark>
 
 </details>
+
+<details>
+
+<summary>Version 0.2.0.25</summary>
+
+The following changes were made:
+
+* <mark style="color:green;">Added 2FA tools to the user management TUI</mark>
+* <mark style="color:yellow;">General improvements and bug fixes</mark>
+
+</details>
