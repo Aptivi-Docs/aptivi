@@ -131,18 +131,32 @@ Note that your account must have either the administrative permissions enabled o
 
 ## <mark style="color:$primary;">2FA Authentication</mark>
 
-<figure><img src="../../../.gitbook/assets/image (93).png" alt=""><figcaption></figcaption></figure>
+You can enroll users into the 2FA authentication requirement using either the master command, `2fa`, or through the user management TUI. This way, if the user has been enrolled to the 2FA requirement, the next time the user enters their password, they'll be prompted to write the code that they can obtain through the authenticator app.
 
-You can enroll users into the 2FA authentication requirement using the master command, `2fa`.
-
-This master command provides the following actions:
-
-<table><thead><tr><th width="109.3333740234375">Action</th><th>Description</th></tr></thead><tbody><tr><td><code>add</code></td><td>Enrolls the user to the 2FA requirement, prompting you to enter the setup key or scan the QR code with any authenticator apps, such as Google Authenticator or Authy.</td></tr><tr><td><code>delete</code></td><td>Deletes the requirement of 2FA for a user.</td></tr><tr><td><code>check</code></td><td>Checks to see if this user has been enrolled to the 2FA requirement.</td></tr><tr><td><code>setupkey</code></td><td>Returns the setup key in plain text.</td></tr><tr><td><code>setupqr</code></td><td>Returns the QR code that can be scanned on your phone for authenticator apps.</td></tr></tbody></table>
+<figure><img src="../../../.gitbook/assets/image (94).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="danger" %}
 You can't manage 2FA for users that don't have any password set, because the password in Nitrocid is the first factor, then the authentication code, which is the second factor.
 {% endhint %}
 
-Afterwards, if the user has been enrolled to the 2FA requirement, the next time the user enters their password, they'll be prompted to write the code that they can obtain through the authenticator app.
+<details>
 
-<figure><img src="../../../.gitbook/assets/image (94).png" alt=""><figcaption></figcaption></figure>
+<summary>Managing 2FA using the master command</summary>
+
+<figure><img src="../../../.gitbook/assets/image (93).png" alt=""><figcaption></figcaption></figure>
+
+This master command provides the following actions:
+
+<table><thead><tr><th width="109.3333740234375">Action</th><th>Description</th></tr></thead><tbody><tr><td><code>add</code></td><td>Enrolls the user to the 2FA requirement, prompting you to enter the setup key or scan the QR code with any authenticator apps, such as Google Authenticator or Authy.</td></tr><tr><td><code>delete</code></td><td>Deletes the requirement of 2FA for a user.</td></tr><tr><td><code>check</code></td><td>Checks to see if this user has been enrolled to the 2FA requirement.</td></tr><tr><td><code>setupkey</code></td><td>Returns the setup key in plain text.</td></tr><tr><td><code>setupqr</code></td><td>Returns the QR code that can be scanned on your phone for authenticator apps.</td></tr></tbody></table>
+
+</details>
+
+<details>
+
+<summary>Managing 2FA using the user management TUI</summary>
+
+<figure><img src="../../../.gitbook/assets/image (344).png" alt=""><figcaption></figcaption></figure>
+
+The user management TUI provides a single keybinding that you can press, F6, to access the 2FA management menu. From there, you can enroll the user, delete the requirement, show the setup key, and show the QR code.
+
+</details>
